@@ -11,7 +11,7 @@ import Tabs from 'tabs'
 var Header = React.createClass({
     render: function () {
         return (
-            <div className="header">
+            <div className="header hidden">
                 <Title />
                 <Tabs />
             </div>

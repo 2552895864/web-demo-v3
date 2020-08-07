@@ -11,6 +11,9 @@
   },
   "devDependencies": {},
   "scripts": {
+    "build":"fis3 release demo -wl",
+    "start":"fis3 server start",
+    "stop":"fis3 server stop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "cuijian",

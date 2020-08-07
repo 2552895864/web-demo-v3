@@ -16,7 +16,7 @@ let Boundcontrol = React.createClass({
             // 父容器可见性
             parentVisible: {},
             // 是否开启
-            boundSwitch: 'boundOff',
+            boundSwitch: 'boundOn',
             // 当前视野设备的数量
             boundTotal: 0,
             // 文字描述
@@ -109,7 +109,7 @@ let Boundcontrol = React.createClass({
         let boundTotal = this.state.boundTotal;
         let describe = this.state.describe;
         return (
-            <div className={tabIndex === 1 ? 'boundcontrol hidden' : 'boundcontrol visible'} style={parentVisible} >
+            <div className={tabIndex === 1 ? 'boundcontrol hidden' : 'boundcontrol hidden'} style={parentVisible} >
                 <div className="boundsearch_title">全部显示</div>
                 <div className={boundSwitch} onClick={handleBoundSwitch}></div>
                 <div className="boundsearch_total">{describe}:{boundTotal}</div>
